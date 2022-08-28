@@ -4,6 +4,8 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
+string Qadrat()
+{
 Console.WriteLine("Введите координату x1 ");
 int x1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координату y1 ");
@@ -19,4 +21,13 @@ Console.WriteLine("Введите координату z2 ");
 int z2 = Convert.ToInt32(Console.ReadLine());
 
 double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
-Console.WriteLine("Расстояние между двумя точками в пространстве равно " + distance);
+return "Расстояние между двумя точками в пространстве равно " + distance;
+}
+try
+{
+Console.WriteLine(Qadrat());
+}
+catch
+{
+    Console.WriteLine("Что-то пошло не так, давай сначала");
+}
